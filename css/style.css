@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #fff;
+    background-color: #000;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.page-section {
+    margin: 20px;
+    padding: 10px 20px;
+
+}
+
+
+
+.btn {
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.social-icons {
+    font-size: 20px;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+.copyright {
+    text-align: center;
+    width: 100%;
+    font-weight: 300;
+    background: #262626;
+    padding: 25px 0;
+    margin-top: 20px;
+}
+
+@media only screen and(max-width: 768px) {
+    .about {
+        background-image: url(images/usersm2.png);
+    }
+}
