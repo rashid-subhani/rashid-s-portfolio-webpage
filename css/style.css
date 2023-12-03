@@ -12,10 +12,6 @@ body {
     color: var(--text-color);
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 header {
     background-color: var(--header-bg-color);
     padding: 20px;
@@ -24,32 +20,33 @@ header {
 }
 
 .bgimg {
-    background-size: contain;
+    width: 100%;
+    height: 500px;
 }
 
 h1 span {
-    font-size: 20px;
+    font-size: 30px;
+    color: rgb(200, 8, 40);
+}
+
+h2 span {
+    font-size: 25px;
+    color: rgb(200, 8, 40);
 }
 
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: space-around;
     color: #fff;
     background-color: #000;
     border: 2px solid black;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-top: 20px;
+    text-decoration: none;
 }
 
-nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
-}
-
-nav ul li a {
+nav a {
     color: white;
     text-decoration: none;
     font-size: 20px;
@@ -58,6 +55,8 @@ nav ul li a {
 .hero-banner {
     margin: 20px;
     padding: 20px;
+    background-image: url(../image/bgportfolio.jpg);
+    background-size: cover;
 }
 
 .about {
@@ -65,10 +64,10 @@ nav ul li a {
     padding: 20px 10px;
 }
 
-
 .page-section {
     margin: 20px;
     padding: 10px 20px;
+    display: grid;
 }
 
 .btn {
@@ -78,8 +77,14 @@ nav ul li a {
     background-color: azure;
 }
 
-section p {
+p {
     margin: 10px auto;
+    text-decoration: none;
+    
+}
+
+a:link {
+    text-decoration: none;
 }
 
 .social-icons {
@@ -87,7 +92,7 @@ section p {
     text-decoration: none;
     font-size: 20px;
     font-weight: 200;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .copyright {
@@ -101,30 +106,36 @@ section p {
 }
 
 /* media queries */
-@media only screen and(max-width: 768px) {
+   
+    /* iPads (portrait and landscape) ----------- */
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    /* Styles */
     body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        background-color: skyblue;
     }
-
-    .about-me,
-    .work,
-    .contact {
-        width: 70%;
+    
+    /* iPads (landscape) ----------- */
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    /* Styles */
+    body {
+        background-color: rgb(10, 59, 79);
     }
-
-    /* Additional styling for larger screens */
-@media (min-width: 1024px) {
-    .about-me,
-    .work,
-    .contact {
-      width: 60%;
+    }
+    
+    /* Desktops and laptops ----------- */
+    @media only screen  and (min-width : 1224px) {
+    /* Styles */
+    body {
+        background-color: rgb(222, 159, 218);
+    }
+    }
+    
+    /* Large screens ----------- */
+    @media only screen  and (min-width : 1824px) {
+    /* Styles */
+    body {
+        background-color: rgb(189, 54, 68);
     }
     }
 }
-
- .click-img {
-    cursor: pointer;
-  }
-
+    
